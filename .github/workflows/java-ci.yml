@@ -27,6 +27,6 @@ jobs:
       - name: Compile Java
         run: javac MaheshArunAladi/src/main/java/Calculator.java
 
-      # Step 4: Run main class
+      # Step 4: Run main class with test input
       - name: Run Java program
-        run: java -cp MaheshArunAladi/src/main/java Calculator
+        run: echo -e "10\n5\n+" | java -cp MaheshArunAladi/src/main/java Calculator
